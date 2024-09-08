@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f7659a3732.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Fill The Form</h1>
+    </div>
+
+    <form class="form-content" id="form-content">
+        <input class="text-inputs" type="text" name="fname" id="ful-name" placeholder="Enter Full Name" required >
+        <input class="text-inputs" type="text" name="fathername" id="father-name" placeholder="Enter Father Name" required >
+        <input class="text-inputs" type="datetime" name="dob" id="dob" placeholder="Your Date Of Birth" required >
+        <input class="text-inputs" type="text" name="marital" id="marital-status" placeholder="Write merried or Un merried" required >
+        <input class="text-inputs" type="number" name="cnic" id="cnic" placeholder="Enter CNIC no." required>
+        <input class="text-inputs" type="text" name="address" id="address" placeholder="Enter Your Address" required >
+        <input class="text-inputs" type="email" name="email" id="e-mail" placeholder="Enter Email" required >
+        <input class="text-inputs" type="number" name="phone-no." id="phone-no." placeholder="Enter Your Phone Number" required >
+        <textarea class="textarea-inputs" name="education" id="education" placeholder="Enter Your Education details." required></textarea>
+        <textarea class="textarea-inputs" name="skills" id="skills" placeholder="Enter skills keywords like i.e (web Devloper)" required></textarea>
+        <textarea class="textarea-inputs" name="experience" id="experience" placeholder="Enter Your Experience" required></textarea>
+        <button class="btn-submit" id="btn-submit" type="submit">Create Resume</button>
+    </form>
+    
+
+    <div class="resume-container" id="resume-container" style="display: none;">
+        <div class="header">
+            <h1><span id="user-name"></span></h1>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fa-solid fa-bars icons"></i>
+            </div>
+        </div>
+        <div class="personal-detail-bar" id="personal-detail">
+            <div class="image">
+                <span id="u-img"></span>
+            </div>
+            <div class="text-content">
+                <h3 class="detail-text">FATHER"S NAME</h3>
+                <h4 class="detail-text"><span id="u-father"></span></h4>
+            </div>
+            <div class="text-content">
+                <h3 class="detail-text">DATE OF BIRTH</h3>
+                <h4 class="detail-text"><span id="u-dob"></span></h4>
+            </div>
+            <div class="text-content">
+                <h3 class="detail-text">MARITAL STATUS</h3>
+                <h4 class="detail-text"><span id="u-status"></span></h4>
+            </div>
+            <div class="text-content">
+                <h3 class="detail-text">CNIC #</h3>
+                <h4 class="detail-text"><span id="u-cnic"></span></h4>
+            </div>
+            <div class="text-content">
+                <h3 class="detail-text">HOME ADDRESS</h3>
+                <h4 class="detail-text"><span id="u-address"></span></h4>
+            </div>
+            <div class="text-content">
+                <h3 class="detail-text">E-MAIL ADDRESS</h3>
+                <h4 class="detail-text"><span id="u-email"></span></h4>
+            </div>
+            <div class="text-content">
+                <h3 class="detail-text">CONTACT #</h3>
+                <h4 class="detail-text"><span id="u-number"></span></h4>
+                <h4 class="detail-text"><span id="u-number"></span></h4>
+            </div>
+        </div>
+        <div class="more-info">
+            <div class="section-1">
+                <h2>OBJECTIVE</h2>
+                <p>To use my theoritical knowladge, practical experience and opportunity to work freely 
+                    its support the organization and achieve its corporate goals more effectively whitin 
+                    the stipulated time, as a team player or on own initiative. passionate to do work hard 
+                    for acheivement of target goals.</p>
+            </div>
+            <button class="btn toggle-btn" id="toggle-btn">Toggle skills</button>
+            <div class="section-1 skills" id="skills">
+                <h2>SKILLS</h2>
+                <span id="skills-info"></span>
+            </div>
+            <div class="section-1">
+                <h2>EDUCATION</h2>
+                <span id="edu-info"></span>
+            </div>
+            <div class="section-1">
+                <h2>EXPERIENCE</h2>
+                <span id="exper-info"></span>
+            </div>
+            <div class="section-1">
+                <h2>REFRENCE</h2>
+                <p>Available on request.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

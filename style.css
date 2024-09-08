@@ -120,6 +120,61 @@ body{
     display: none;
 }
 
+/* Second Page Style Start From Here */
+.form-content{
+    width: 700px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: beige;
+    color: black;
+    display: block;
+    margin: auto;
+}
+.text-inputs{
+    width: 600px;
+    height: 30px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+.textarea-inputs{
+    width: 600px;
+    height: 80px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.btn-submit{
+    height: 40px;
+    width: 200px;
+    background-color: gray;
+    color: beige;
+    border: 3px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 1s ease-in-out;
+}
+.btn-submit:hover{
+    background-color: black;
+    color: beige;
+    border: gray 3px solid;
+}
+
+
+
+
+
 @media (max-width: 786px){
     .resume-container{
         margin-top: 0;
@@ -155,5 +210,18 @@ body{
     }
     .footer h2{
         font-size: 18px;
+    }
+
+
+
+    .text-inputs, .textarea-inputs{
+        width: 500px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .header{
+        width: 750px;
     }
 }
